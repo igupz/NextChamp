@@ -1,18 +1,18 @@
-# NextChamp
-Plataforma de campeonatos de jogos online
+# NextChamp<br />
+<br />Plataforma de campeonatos de jogos online<br />
 
-Frontend: HTML, CSS e JavaScript puros
+<br />Frontend: HTML, CSS e JavaScript puros<br />
 
-Backend: Node.js com Express
+<br />Backend: Node.js com Express<br />
 
-Banco de dados: SQLite (simples de usar e não requer servidor)
+<br />Banco de dados: SQLite (simples de usar e não requer servidor)<br />
 
-Autenticação: login/senha + middleware de token (JWT)
+<br />Autenticação: login/senha + middleware de token (JWT)<br />
 
-#Como abrir
+<br />#Como abrir
 
->Instalar as dependências:
-  >npm install express cors sqlite3 jsonwebtoken
-  >npm install
->Iniciar: npm start / node server.js
+<br />-> Instalar as dependências:
+  <br />-> npm install express cors sqlite3 jsonwebtoken
+<br />  -> npm install
+<br />-> Iniciar: npm start / node server.js
 
