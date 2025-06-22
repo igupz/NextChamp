@@ -26,10 +26,10 @@ git clone https://github.com/igupz/nextChamp
 Dentro da pasta backend(cd backend): <br /> 
 
 ```bash
-npm init -y <br />
+npm init -y 
 ```
 ```bash
-npm install<br />
+npm install
 ```
 
 2. Execute o Docker Compose:
