@@ -24,8 +24,13 @@ Ambiente: Docker + Docker Compose
 git clone https://github.com/igupz/nextChamp
 ```
 Dentro da pasta backend(cd backend): <br /> 
-npm init -y <br /> 
-npm install<br /> 
+
+```bash
+npm init -y <br />
+```
+```bash
+npm install<br />
+```
 
 2. Execute o Docker Compose:
 
