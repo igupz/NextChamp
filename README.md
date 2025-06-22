@@ -8,8 +8,14 @@ Banco de dados: SQLite (leve, simples e sem necessidade de servidor)
 
 Autenticação: Login e senha + middleware de token (JWT)
 
+
 Como abrir
 
 -> Instalar as dependências: -> npm install express cors sqlite3 jsonwebtoken -> npm install
 
 -> Iniciar o servidor: -> npm start ou -> node server.js
+
+
+📃 Licença
+Este projeto foi desenvolvido com finalidade acadêmica. Livre para uso e modificações conforme necessário.
+
