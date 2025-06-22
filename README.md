@@ -17,6 +17,7 @@ Ambiente: Docker + Docker Compose
 
 - [Docker](https://www.docker.com/) instalado
 - [Docker Compose](https://docs.docker.com/compose/)
+- [Node.js]([https://docs.docker.com/compose/](https://nodejs.org/pt))
 
 ### Passo a passo
 
@@ -25,7 +26,7 @@ Ambiente: Docker + Docker Compose
 ```bash
 git clone https://github.com/igupz/nextChamp
 ```
-Dentro da pasta backend(cd backend): <br /> 
+Dentro da pasta backend(cd backend), instale as dependências se necessário: <br /> 
 
 ```bash
 npm init -y 
