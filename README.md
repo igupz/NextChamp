@@ -1,8 +1,8 @@
 # 🏆 NextChamp
 — Plataforma de Gerenciamento de Campeonatos de Jogos Online NextChamp é uma plataforma web desenvolvida para facilitar a criação, organização e gerenciamento de campeonatos de jogos online. O sistema permite o cadastro de jogadores, agendamento de partidas, registro de resultados e visualização de rankings atualizados.
 
-Instagram: www.instagram.com/projetonextchamp/
-Facebook: https://www.facebook.com/profile.php?id=61577272936286
+Instagram: instagram.com/projetonextchamp/
+Facebook: facebook.com/profile.php?id=61577272936286
 
 # Tecnologias utilizadas 
 
