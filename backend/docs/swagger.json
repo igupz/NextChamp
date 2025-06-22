@@ -1,0 +1,173 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "nextChamp",
+    "version": "1.0.0",
+    "description": "Documentação da API para gerenciamento de usuários, eventos e inscrições em campeonatos."
+  },
+  "basePath": "/api",
+  "schemes": ["http"],
+  "paths": {
+    "/users/register": {
+      "post": {
+        "summary": "Registrar novo usuário",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": { "type": "string" },
+                "password": { "type": "string" },
+                "email": { "type": "string" },
+                "nickname": { "type": "string" },
+                "birthdate": { "type": "string" },
+                "platform": { "type": "string" }
+              },
+              "required": ["username", "password"]
+            }
+          }
+        ],
+        "responses": {
+          "201": { "description": "Usuário registrado com sucesso" }
+        }
+      }
+    },
+    "/users/login": {
+      "post": {
+        "summary": "Login de usuário",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": { "type": "string" },
+                "password": { "type": "string" }
+              },
+              "required": ["username", "password"]
+            }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Login realizado com sucesso" },
+          "401": { "description": "Credenciais inválidas" }
+        }
+      }
+    },
+    "/events": {
+      "get": {
+        "summary": "Listar todos os eventos",
+        "responses": {
+          "200": {
+            "description": "Lista de eventos"
+          }
+        }
+      },
+      "post": {
+        "summary": "Criar evento (admin)",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "description": { "type": "string" },
+                "platform": { "type": "string" },
+                "date": { "type": "string" }
+              },
+              "required": ["name", "description", "platform", "date"]
+            }
+          }
+        ],
+        "responses": {
+          "201": { "description": "Evento criado" }
+        }
+      }
+    },
+    "/events/{id}": {
+      "get": {
+        "summary": "Obter evento por ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": { "description": "Evento encontrado" },
+          "404": { "description": "Evento não encontrado" }
+        }
+      },
+      "put": {
+        "summary": "Atualizar evento (admin)",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "description": { "type": "string" },
+                "platform": { "type": "string" },
+                "date": { "type": "string" },
+                "closed": { "type": "boolean" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Evento atualizado" }
+        }
+      },
+      "delete": {
+        "summary": "Deletar evento (admin)",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": { "description": "Evento deletado" }
+        }
+      }
+    },
+    "/events/subscribe/{eventId}": {
+      "post": {
+        "summary": "Inscrever-se em um evento",
+        "parameters": [
+          {
+            "name": "eventId",
+            "in": "path",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "201": { "description": "Inscrição realizada" },
+          "400": { "description": "Erro ao se inscrever" }
+        }
+      }
+    }
+  }
+}
