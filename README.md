@@ -29,13 +29,10 @@ Ambiente: Docker + Docker Compose
 ```bash
 git clone https://github.com/igupz/nextChamp
 ```
-Dentro da pasta backend(cd backend), instale as dependências se necessário: <br /> 
+instale as dependências: <br /> 
 
 ```bash
-npm init -y 
-```
-```bash
-npm install
+npm i mysql2 dotenv bcrypt express
 ```
 
 2. Execute o Docker Compose:
